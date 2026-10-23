@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bols Café Gyula – Webdesign-koncepció</title>
+  <meta name="description" content="Független webdesign-koncepció a gyulai Bols Café számára: napi menü, étlap, nyitvatartás és kapcsolat. Bemutató oldal, nem hivatalos weboldal.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#f7f2e8">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Ugrás a tartalomra</a>
+
+  <div class="concept-bar">
+    <div class="shell concept-bar-inner">
+      <p><span class="concept-dot" aria-hidden="true"></span> Független webdesign-koncepció · Nem a Bols Café hivatalos weboldala</p>
+      <a href="#disclaimer">Mi ez?</a>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="shell header-inner">
+      <a class="brand" href="#kezdolap">
+        <span class="brand-name">Bols</span>
+        <span class="brand-sub">Café · Gyula</span>
+        <span class="sr-only">– kezdőlap</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav">
+        <span class="nav-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="nav-toggle-label">Menü</span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Fő navigáció">
+        <ul>
+          <li><a href="#kezdolap">Kezdőlap</a></li>
+          <li><a href="#etlap">Étlap</a></li>
+          <li><a href="#napi-menu">Napi menü</a></li>
+          <li><a href="#kapcsolat">Kapcsolat</a></li>
+        </ul>
+        <a class="header-phone" href="tel:+36309787407">
+          <span>Asztalfoglalás</span>
+          <strong>+36 30 978 7407</strong>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="kezdolap">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> Gyula · Kossuth utca 1/B</p>
+          <h1>Házias ízek<br>a gyulai<br><em>sétálóutcán.</em></h1>
+          <p class="lede">Családi konyha, bőséges adagok és mindennapi menü a gyulai belváros szívében. Pizzák, sültek, saláták – egy jó ebédhez illő választékkal.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#napi-menu">Napi menü</a>
+            <a class="link-arrow" href="#etlap">Étlap megtekintése <span aria-hidden="true">→</span></a>
+          </div>
+          <ul class="hero-facts">
+            <li>
+              <span class="fact-number">01</span>
+              <span class="fact-title">Napi menü minden nap</span>
+              <span class="fact-note">szombaton és vasárnap is</span>
+            </li>
+            <li>
+              <span class="fact-number">02</span>
+              <span class="fact-title">Kézműves hamburgerek</span>
+              <span class="fact-note">helyben sütött zsemlével</span>
+            </li>
+            <li>
+              <span class="fact-number">03</span>
+              <span class="fact-title">Pizza 28 / 49 / 59 cm</span>
+              <span class="fact-note">nagy, családi és óriás</span>
+            </li>
+          </ul>
+        </div>
+
+        <figure class="hero-figure">
+          <div class="hero-image-frame">
+            <picture>
+              <source
+                srcset="assets/hero-goulash-600.webp 600w, assets/hero-goulash.webp 1200w"
+                sizes="(max-width: 900px) 100vw, 46vw"
+                type="image/webp">
+              <img
+                src="assets/hero-goulash.jpg"
+                srcset="assets/hero-goulash-600.jpg 600w, assets/hero-goulash.jpg 1200w"
+                sizes="(max-width: 900px) 100vw, 46vw"
+                width="1200" height="1500"
+                alt="Gulyásleves fehér tálban – illusztrációs fotó"
+                loading="eager" fetchpriority="high" decoding="async">
+            </picture>
+          </div>
+          <figcaption>Illusztráció · gulyásleves. Fotó: Hu Totya, CC BY-SA 3.0. Nem a Bols Café tényleges fotója.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="daily" id="napi-menu" aria-labelledby="dailyTitle">
+      <div class="shell daily-grid">
+        <div class="daily-intro">
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-mark" aria-hidden="true"></span> Napi menü · minta</p>
+          <h2 id="dailyTitle">A mai ebéd.</h2>
+          <p class="daily-date">
+            <span id="dailyDateLabel">Ma</span>
+            <time id="dailyDate" datetime="2026-10-22">2026. október 22., csütörtök</time>
+          </p>
+          <p class="daily-lede">A napi menü a hét minden napján elérhető – szombaton és vasárnap is. Az itt látható fogások és az ár mintaadatok; a valós ajánlatért hívja az éttermet.</p>
+          <div class="daily-actions">
+            <a class="btn btn-light" href="tel:+36309787407">Telefon: +36 30 978 7407</a>
+            <a class="link-arrow link-arrow-light" href="#etlap">A teljes étlap <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="preview-banner" id="previewBanner" hidden>
+            <p><span class="tag tag-solid">Demó</span> <span id="previewLabel">előnézet</span></p>
+            <button type="button" id="exitDemo">Vissza a mai mintához</button>
+          </div>
+        </div>
+
+        <div class="daily-card" id="dailyCard">
+          <article class="daily-menu">
+            <div class="daily-menu-head">
+              <p class="service-label">Minta napi menü <span class="tag">MINTA</span></p>
+              <p class="service-note">A fogások a 2026-os étlapról származnak, az összeállítás és az ár minta.</p>
+            </div>
+
+            <div class="course-group">
+              <h3>Leves</h3>
+              <ul class="course-list">
+                <li>
+                  <div class="course-copy">
+                    <span class="course-name">Csontleves cérnametélttel</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="course-group">
+              <h3>Főételek</h3>
+              <ul class="course-list">
+                <li>
+                  <div class="course-copy">
+                    <span class="course-name">Rántott csirkemell</span>
+                    <span class="course-desc">sültburgonya, párolt rizs, savanyúság</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="course-copy">
+                    <span class="course-name">Bolognai spagetti</span>
+                    <span class="course-desc">darált húsos paradicsomos ragu, sajt</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="course-copy">
+                    <span class="course-name">Rántott trapista sajt <span class="dish-tag">vegetáriánus</span></span>
+                    <span class="course-desc">3 db, sültburgonya, párolt rizs, tartármártás</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="daily-total">
+              <span>Minta menü ára</span>
+              <strong>2 690 Ft</strong>
+            </div>
+            <p class="service-note service-note-bottom">Az ár nem valós, kizárólag a demó része. A napi kínálatért hívja a +36 30 978 7407 számot.</p>
+          </article>
+        </div>
+      </div>
+      <p class="sr-only" id="dailyStatus" aria-live="polite"></p>
+    </section>
+
+    <section class="menu-section" id="etlap" aria-labelledby="menuTitle">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> Étlap · 2026</p>
+            <h2 id="menuTitle">Ami a konyhából<br>az asztalra kerül.</h2>
+          </div>
+          <p class="section-note">Magyaros fogások, pizzák, saláták és kézműves hamburgerek. Az alábbi válogatás a Bols Café 2026-os étlapjából származik.</p>
+        </div>
+
+        <div class="menu-groups">
+          <div class="menu-group">
+            <h3><span>01</span> Levesek</h3>
+            <ul class="price-list">
+              <li>
+                <div class="price-copy">
+                  <span class="price-name">Csontleves cérnametélttel</span>
+                  <span class="price-desc">klasszikus csontleves</span>
+                </div>
+                <span class="price">1 300 Ft</span>
+              </li>
+              <li>
+                <div class="price-copy">
+                  <span class="price-name">Bográcsgulyás</span>
+                  <span class="price-desc">marhapörkölt, répa, galuska, burgonya</span>
+                </div>
+                <span class="price">2 950 Ft</span>
+              </li>
+              <li>
+                <div class="price-copy">
+                  <span class="price-name">Babgulyás</span>
+                  <span class="price-desc">tarkabab, marhapörkölt, galuska, tejföl</span>
+                </div>
+                <span class="price">2 950 Ft</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-group">
+            <h3><span>02</span> Főételek</h3>
+            <ul class="price-list">
+              <li>
+                <div class="price-copy">
+                  <span class="price-name">Rántott csirkemell</span>
+                  <span class="price-desc">sültburgonya, párolt rizs, savanyúság</span>
+                </div>
+                <span class="price">3 500 Ft</span>
+              </li>
+              <li>
+                <div class="price-copy">
+                  <span class="price-name">Roston csirkemell</span>
+                  <span class="price-desc">sültburgonya, párolt rizs, savanyúság</span>
+                </div>
+                <span class="price">3 800 Ft</span>
+              </li>
+              <li>
+                <div class="price-copy">
+                  <span class="price-name">Rántott sertéskaraj</span>
+                  <span class="price-desc">sültburgonya, párolt rizs, savanyúság</span>
+                </div>
+                <span class="price">3 500 Ft</span>
+              </li>
+              <li>
+                <div class="price-copy">
+                  <span class="price-name">Roston sült sertéstarja</span>
+                  <span class="price-desc">sültburgonya, párolt rizs, savanyúság</span>
+                </div>
+                <span class="price">3 800 Ft</span>
+              </li>
+              <li>
+                <div class="price-copy">
+                  <span class="price-name">Marhapörkölt galuskával</span>
+                  <span class="price-desc">savanyúsággal</span>
+                </div>
+                <span class="price">5 200 Ft</span>
+              </li>
+              <li>
+                <div class="price-copy">
+                  <span class="price-name">Spagetti a’la Carbonara</span>
+                  <span class="price-desc">sonka, bacon, tejszín, fokhagyma, sajt</span>
+                </div>
+                <span class="price">3 500 Ft</span>
+              </li>
+              <li>
+                <div class="price-copy">
+                  <span class="price-name">Bols saláta</span>
+                  <span class="price-desc">grillezett csirkemell, főtt tojás, joghurtos kapros öntet</span>
+                </div>
+                <span class="price">3 600 Ft</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pizza-block">
+          <div class="pizza-head">
+            <h3>Pizzák</h3>
+            <p>Nagy 28 cm · Családi 49 cm · Óriás 59 cm</p>
+          </div>
+          <table class="pizza-table">
+            <caption class="sr-only">Pizza árak méret szerint</caption>
+            <thead>
+              <tr>
+                <th scope="col">Pizza</th>
+                <th scope="col">28 cm</th>
+                <th scope="col">49 cm</th>
+                <th scope="col">59 cm</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Sajtos <span>Margherita</span></th>
+                <td data-label="28 cm">2 600 Ft</td>
+                <td data-label="49 cm">5 500 Ft</td>
+                <td data-label="59 cm">6 100 Ft</td>
+              </tr>
+              <tr>
+                <th scope="row">Sonkás</th>
+                <td data-label="28 cm">2 950 Ft</td>
+                <td data-label="49 cm">6 400 Ft</td>
+                <td data-label="59 cm">7 500 Ft</td>
+              </tr>
+              <tr>
+                <th scope="row">Gyulai</th>
+                <td data-label="28 cm">3 300 Ft</td>
+                <td data-label="49 cm">7 000 Ft</td>
+                <td data-label="59 cm">8 100 Ft</td>
+              </tr>
+              <tr>
+                <th scope="row">Parasztos</th>
+                <td data-label="28 cm">3 300 Ft</td>
+                <td data-label="49 cm">8 300 Ft</td>
+                <td data-label="59 cm">9 400 Ft</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="menu-footnote">Az árak a 2026-os étlapból származnak, tájékoztató jellegűek. Extra feltét 500 Ft, csomagolás 200 Ft. A teljes és aktuális étlapért kérdezze a személyzetet.</p>
+        </div>
+
+        <aside class="burger-note" aria-label="Hamburgerek">
+          <p class="burger-kicker">Kézműves hamburgerek</p>
+          <p class="burger-title">A zsemle helyben sütve, a hús frissen darálva.</p>
+          <p class="burger-copy">Marha, rántott csirke, grillcsirke vagy sült tarja – mindegyik 2 800 Ft-tól, sültburgonyával.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="info" id="informaciok" aria-labelledby="infoTitle">
+      <div class="shell info-grid">
+        <div class="info-main">
+          <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> Információk</p>
+          <h2 id="infoTitle">Megközelítés és nyitvatartás.</h2>
+          <address class="address-block">
+            <span>5700 Gyula</span>
+            <strong>Kossuth utca 1/B</strong>
+            <span>a sétálóutca elején, a belvárosban</span>
+          </address>
+          <ul class="info-features">
+            <li><strong>Kerthelyiség</strong><span>belső tér és kerthelyiség</span></li>
+            <li><strong>Rendezvények</strong><span>osztálytalálkozók, ballagások, családi összejövetelek</span></li>
+            <li><strong>Napi menü</strong><span>minden nap, hétvégén is</span></li>
+          </ul>
+        </div>
+
+        <div class="hours-block">
+          <h3>Nyitvatartás</h3>
+          <dl class="hours-list">
+            <div><dt>Hétfő – csütörtök</dt><dd>09:00–20:00</dd></div>
+            <div><dt>Péntek</dt><dd>09:00–21:00</dd></div>
+            <div><dt>Szombat</dt><dd>10:00–22:00</dd></div>
+            <div><dt>Vasárnap</dt><dd>10:00–20:00</dd></div>
+          </dl>
+          <p class="source-note"><span class="tag tag-outline">2020-as közzététel</span> A hivatalos oldalon közzétett nyitvatartás. Az adatok 2020-ból származnak, ezért kérjük, telefonon ellenőrizze.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="kapcsolat" aria-labelledby="contactTitle">
+      <div class="shell contact-grid">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> Kapcsolat</p>
+          <h2 id="contactTitle">Foglaljon asztalt<br>telefonon.</h2>
+          <p class="contact-lede">Ha kérdése van a napi menüről, egy rendezvényről vagy asztalfoglalásról, hívjon minket – szívesen segítünk.</p>
+        </div>
+        <div class="contact-details">
+          <a class="phone-link" href="tel:+36309787407">+36 30 978 7407</a>
+          <a class="phone-link phone-link-small" href="tel:+3666642634">+36 66 642 634</a>
+          <div class="contact-links">
+            <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Bols%20Caf%C3%A9%2C%205700%20Gyula%2C%20Kossuth%20utca%201%2FB" target="_blank" rel="noopener">
+              Útvonal a Google Térképen <span aria-hidden="true">↗</span>
+            </a>
+            <a class="link-arrow" href="https://facebook.com/groups/160336224011913/" target="_blank" rel="noopener">Facebook-csoport <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="contact-note">A térkép és a Facebook-csoport külső oldalra visz. A Facebook-hivatkozás a hivatalos weboldalon szereplő csoportra mutat.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="disclaimer">
+    <div class="shell footer-grid">
+      <div class="footer-brand">
+        <span class="brand-name">Bols</span>
+        <span class="brand-sub">Café · Gyula</span>
+        <p>Webdesign-koncepció a Bols Café számára.<br>Készült 2026-ban, bemutató céllal.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Lábléc navigáció">
+        <p class="footer-heading">Oldalak</p>
+        <ul>
+          <li><a href="#kezdolap">Kezdőlap</a></li>
+          <li><a href="#etlap">Étlap</a></li>
+          <li><a href="#napi-menu">Napi menü</a></li>
+          <li><a href="#kapcsolat">Kapcsolat</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-info">
+        <p class="footer-heading">Fontos tudnivaló</p>
+        <p>Ez egy független, bemutató célú webdesign-koncepció. Nem a Bols Café hivatalos weboldala, és nem áll kapcsolatban a vállalkozással. A név, a cím és az étlap adatai nyilvános forrásokból származnak; a napi menü, az ár és a demófunkciók minták.</p>
+        <p class="footer-credit">Fotó: <a href="https://commons.wikimedia.org/wiki/File:Hungarian_goulash_soup.jpg" target="_blank" rel="noopener">Hu Totya</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>. Illusztráció, nem a Bols Café fotója.</p>
+        <p class="footer-credit">Adatok: <a href="http://bolscafegyula.hu/" target="_blank" rel="noopener">bolscafegyula.hu</a> (2020), <a href="https://www.visitgyula.com/hu/latnivalok-adatlap/bols-cafe" target="_blank" rel="noopener">Visit Gyula</a> és a Bols Café 2026-os étlapja. Gyűjtés: 2026. 10. 22.</p>
+      </div>
+    </div>
+
+    <div class="shell footer-bottom">
+      <p>© 2026 · Független koncepció · Nem hivatalos oldal</p>
+      <button class="demo-trigger" id="openDemo" type="button">Demó mód · napi menü előnézet</button>
+      <a class="back-to-top" href="#kezdolap">Vissza a tetejére <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+
+  <dialog class="demo-dialog" id="demoDialog" aria-labelledby="demoTitle">
+    <form class="demo-form" id="demoForm">
+      <div class="demo-head">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> Demó mód</p>
+          <h2 id="demoTitle">Napi menü előnézet</h2>
+        </div>
+        <button class="demo-close" id="closeDemo" type="button" aria-label="Előnézet bezárása">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+
+      <div class="demo-scroll">
+        <p class="demo-intro">Válasszon napot és állapotot, majd alkalmazza az előnézetet. A módosítás csak ebben a böngészőben látszik, és nem kerül fel a weboldalra.</p>
+
+        <fieldset class="demo-fieldset">
+          <legend>Nap</legend>
+          <div class="day-grid" id="dayGrid"></div>
+        </fieldset>
+
+        <fieldset class="demo-fieldset">
+          <legend>Állapot</legend>
+          <div class="scenario-list">
+            <label class="scenario-option">
+              <input type="radio" name="scenario" value="full" checked>
+              <span><strong>Teljes minta</strong><small>Leves és főételek, mintaárral</small></span>
+            </label>
+            <label class="scenario-option">
+              <input type="radio" name="scenario" value="soup">
+              <span><strong>Csak leves</strong><small>A főételek még nem érkeztek meg</small></span>
+            </label>
+            <label class="scenario-option">
+              <input type="radio" name="scenario" value="empty">
+              <span><strong>Nincs közzétett menü</strong><small>Üres állapot és telefonos CTA</small></span>
+            </label>
+          </div>
+        </fieldset>
+
+        <p class="demo-disclaimer">A demóban szereplő fogások a café 2026-os étlapján megtalálhatók, de a napi összeállítás és az árak nem valósak.</p>
+      </div>
+
+      <div class="demo-actions">
+        <button class="btn btn-ghost" id="resetDemo" type="button">Vissza a maihoz</button>
+        <button class="btn btn-primary" id="applyDemo" type="submit">Előnézet alkalmazása</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
