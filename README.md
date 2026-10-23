@@ -4,6 +4,8 @@ Független, statikus webdesign-demo a gyulai Bols Café számára. Nem a vállal
 
 A projekt célja egy konkrét hiányosság bemutatása: a café aktuális napi/heti menüje jelenleg nem olvasható a saját weboldalán, csak egy Facebook-csoportban. A demo egy gyorsan frissíthető, mobilon jól olvasható napi menü szekciót mutat be, mintával.
 
+**Élő demó:** https://archimre.github.io/bols-cafe-gyula/ — nyilvánosan elérhető, de `noindex` jelöléssel. A link nem titkos; csak a bemutatás céljára ossza meg.
+
 ## Futtatás
 
 A legegyszerűbb:
@@ -108,7 +110,7 @@ A fogásnevek és az à la carte árak a 2026-os étlapból származnak, de a na
 
 ## Következő lépés egy valódi megbízás felé
 
-1. Keresse meg a tulajdonost telefonon vagy személyesen, és mutassa meg a demót egy nem publikus linken (GitHub Pages + `noindex`).
+1. Keresse meg a tulajdonost telefonon vagy személyesen, és mutassa meg a demót egy külön linken (GitHub Pages + `noindex`). A link nyilvános, ezért csak a bemutatáshoz szükséges körben ossza meg.
 2. Kérjen írásos engedélyt a név, az étlap és a fotók használatára; tisztázza, ki frissíti a napi menüt.
 3. Ha van érdeklődés, az első fizetett fázis: HTTPS és tanúsítvány javítása, a nyomtatott `www.bolscafe.hu` cím helyreállítása/átirányítása, majd a napi menü feltöltési folyamatának kialakítása (akár egy egyszerű, jelszóval védett szerkesztő vagy egy szerkesztő által frissített statikus JSON).
 4. Az oldal hivatalossá tétele csak a café jóváhagyásával: a „koncepció” jelölések és a `noindex` eltávolítása, valódi fotók és logó használata engedéllyel, adatvédelmi és impresszum információk ellenőrzése.
