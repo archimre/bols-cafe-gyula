@@ -105,7 +105,7 @@ A fogásnevek és az à la carte árak a 2026-os étlapból származnak, de a na
 
 ## Képek és betűtípusok
 
-- Hero fotó: **Hu Totya**, „Hungarian goulash soup”, CC BY-SA 3.0, Wikimedia Commons. A kivágott változat ugyanezen licenc alatt használható. A fotó illusztráció, nem a Bols Café tényleges étele/helye.
+- Hero kép: **AI-generált illusztráció** (2026). Nem a Bols Café tényleges étele/helye; a korábbi Hu Totya-fotó (CC BY-SA 3.0, Wikimedia Commons) lecserélve.
 - Fraunces és Work Sans: SIL Open Font License, Google Fonts. A WOFF2 fájlok helyben vannak a Google Fonts CDN-ről letöltve, a licencszövegek az `assets/fonts/` mappában. A CSS-be ágyazott, részhalmazra vágott példányok miatt a betűtípusok `file://` megnyitáskor is betöltődnek, CORS-hiba nélkül.
 
 ## Következő lépés egy valódi megbízás felé
